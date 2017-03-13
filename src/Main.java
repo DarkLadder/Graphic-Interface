@@ -80,6 +80,7 @@ public class Main {
         frame.setContentPane(window);
         frame.pack();
         frame.setVisible(true);
+        frame.setResizable(false);
     }
 
     public static void main(String[] args) {
