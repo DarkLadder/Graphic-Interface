@@ -6,6 +6,8 @@ import java.awt.*;
  */
 public class Main {
     Main(){
+        Event event = new Event();
+
         JPanel window = new JPanel();
         window.setLayout(new BorderLayout());
 
@@ -16,6 +18,7 @@ public class Main {
         JPanel P1 = new JPanel();
         P1.setLayout(new GridLayout(4, 5));
         JButton seven  = new JButton("7");
+        seven.addActionListener(event);
         JButton eight = new JButton("8");
         JButton nine = new JButton("9");
         JButton del = new JButton("/");
