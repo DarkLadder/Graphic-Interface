@@ -1,12 +1,13 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 
 /**
  * Created by Dmitrii on 03.03.2017.
  */
 public class Main {
+
     Main(){
-        Event event = new Event();
 
         JPanel window = new JPanel();
         window.setLayout(new BorderLayout());
@@ -18,7 +19,6 @@ public class Main {
         JPanel P1 = new JPanel();
         P1.setLayout(new GridLayout(4, 5));
         JButton seven  = new JButton("7");
-        seven.addActionListener(event);
         JButton eight = new JButton("8");
         JButton nine = new JButton("9");
         JButton del = new JButton("/");
@@ -36,7 +36,7 @@ public class Main {
         JButton nule = new JButton("0");
         JButton pm = new JButton("+/-");
         JButton dot = new JButton(".");
-        JButton zap = new JButton(",");
+        JButton plus = new JButton("+");
         JButton ravno = new JButton("=");
 
         JPanel P2 = new JPanel();
@@ -66,7 +66,7 @@ public class Main {
         P1.add(nule);
         P1.add(pm);
         P1.add(dot);
-        P1.add(zap);
+        P1.add(plus);
         P1.add(ravno);
 
         P2.add(MC);
